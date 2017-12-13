@@ -13,24 +13,24 @@ public class main {
             System.out.println("1. Add.\t 2. Multiply.\t 3.Divide\t 4.Exit");
             Scanner scanner = new Scanner(System.in);
             try {
-
-                int select = scanner.nextInt();
-                switch (select){
-                    case 1:
-                        Operation(calc, TypeOfOperation.ADD);
-                        break;
-                    case 2:
-                        Operation(calc, TypeOfOperation.MULTIPLY);
-                        break;
-                    case 3:
-                        Operation(calc, TypeOfOperation.DIVIDE);
-                        break;
-                    case 4:
-                        isAlive = false;
-                        break;
-                    default:
-                        System.out.println("Enter number please");
-                        continue;
+                if (scanner.hasNextFloat()) {
+                    int select = scanner.nextInt();
+                    switch (select){
+                        case 1:
+                            Operation(calc, TypeOfOperation.ADD);
+                            break;
+                        case 2:
+                            Operation(calc, TypeOfOperation.MULTIPLY);
+                            break;
+                        case 3:
+                            Operation(calc, TypeOfOperation.DIVIDE);
+                            break;
+                        case 4:
+                            isAlive = false;
+                            break;
+                    }
+                } else {
+                    System.out.println("Enter number please");
                 }
 
             } catch (Exception e){
