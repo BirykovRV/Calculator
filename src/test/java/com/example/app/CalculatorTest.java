@@ -22,8 +22,10 @@ class CalculatorTest {
     }
     @Test
     public void testOperationsWithEnumMultiply(){
+        float x = 4;
+        float y = 0.5f;
         float result = calc.operation(x, y, TypeOfOperation.MULTIPLY);
-        assertEquals(8, result);
+        assertEquals(2, result);
     }
 
 

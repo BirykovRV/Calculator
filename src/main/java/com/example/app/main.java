@@ -42,7 +42,7 @@ public class main {
 
     public static void Operation(Calculator calculator, TypeOfOperation select){
         Scanner scanner = new Scanner(System.in);
-        float result = 0;
+        float result;
         System.out.println("Enter 1st number:");
         float firstNumber = scanner.nextFloat();
         System.out.println("Enter 2nd number:");
