@@ -30,7 +30,7 @@ public class main {
                         break;
                     default:
                         System.out.println("Enter number please");
-                        continue;
+                        break;
                 }
 
             } catch (Exception e){
